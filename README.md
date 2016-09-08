@@ -12,6 +12,7 @@ And it like as application of normal operation system.
 * `npm install`
 * `gulp` and `gulp server`
 * Implementing ... (directory "/module")
+* Please, add project link to [JSOS Store](https://github.com/Ermak-13/jsos-store) modules.txt
 
 ## Gulp Commands
 * `gulp default` - gulp dev
