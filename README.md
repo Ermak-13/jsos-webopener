@@ -6,12 +6,12 @@ JSOS module is brick of [JSOS](https://github.com/Ermak-13/jsos).
 And it like as application of normal operation system.
 
 ## How is developing new module?
-* fork this repository
-* rename repository
-* edit README.md
+* Fork this repository
+* Rename repository
+* Edit README.md
 * `npm install`
 * `gulp` and `gulp server`
-* implementing ... (directory "/module")
+* Implementing ... (directory "/module")
 
 ## Gulp Commands
 * `gulp default` - gulp dev
