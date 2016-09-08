@@ -1,0 +1,244 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  margin: 0;
+  padding: 0; }
+
+#desktop-container {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  #desktop-container .desktop {
+    width: 100%;
+    height: 100%; }
+    #desktop-container .desktop .configure-btn {
+      position: absolute;
+      line-height: 48px;
+      font-size: 48px;
+      color: rgba(255, 255, 255, 0.7); }
+      #desktop-container .desktop .configure-btn:hover {
+        font-size: 52px;
+        color: rgba(255, 255, 255, 0.85); }
+
+.widget {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 0 15px; }
+  .widget:hover {
+    background-color: rgba(255, 255, 255, 0.85); }
+  .widget .header {
+    border-bottom: 1px solid #BBB;
+    padding: 10px 0; }
+    .widget .header h1, .widget .header h2, .widget .header h3,
+    .widget .header h4, .widget .header h5, .widget .header h6 {
+      display: inline; }
+  .widget .icons-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 9999; }
+    .widget .icons-container .icon {
+      cursor: pointer;
+      margin: 0 2px; }
+  .widget .header > .icons-container {
+    position: initial;
+    float: right;
+    padding: 0; }
+  .widget .body {
+    padding: 10px 0; }
+
+.panel {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  z-index: 9998; }
+  .panel .next-shortcuts-arrow,
+  .panel .prev-shortcuts-arrow {
+    position: absolute;
+    background: rgba(51, 51, 51, 0.85);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 9999; }
+    .panel .next-shortcuts-arrow:hover,
+    .panel .prev-shortcuts-arrow:hover {
+      background: rgba(17, 17, 17, 0.85); }
+    .panel .next-shortcuts-arrow .arrow-up,
+    .panel .prev-shortcuts-arrow .arrow-up {
+      display: inline-block;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #FFF; }
+    .panel .next-shortcuts-arrow .arrow-down,
+    .panel .prev-shortcuts-arrow .arrow-down {
+      display: inline-block;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #FFF; }
+    .panel .next-shortcuts-arrow .arrow-vafix,
+    .panel .prev-shortcuts-arrow .arrow-vafix {
+      line-height: 60px; }
+    .panel .next-shortcuts-arrow .arrow-left,
+    .panel .prev-shortcuts-arrow .arrow-left {
+      display: inline-block;
+      border-right: 8px solid #FFF;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; }
+    .panel .next-shortcuts-arrow .arrow-right,
+    .panel .prev-shortcuts-arrow .arrow-right {
+      display: inline-block;
+      border-left: 8px solid #FFF;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; }
+  .panel .shortcuts-container-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0; }
+    .panel .shortcuts-container-wrapper .shortcuts-container {
+      margin-top: 25px;
+      margin-left: 25px; }
+      .panel .shortcuts-container-wrapper .shortcuts-container .tooltip-container {
+        display: inline-block; }
+  .panel:hover {
+    background-color: rgba(255, 255, 255, 0.85); }
+  .panel .shortcut {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer; }
+    .panel .shortcut > span {
+      line-height: 60px;
+      font-size: 48px;
+      color: #333; }
+      .panel .shortcut > span:hover {
+        font-size: 52px;
+        color: #111; }
+
+.modal-dialog {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.8); }
+  .modal-dialog .content {
+    background: white;
+    width: 400px;
+    margin: 5% auto; }
+
+.mini-nav > li > a {
+  padding: 5px 10px; }
+
+/* perfect-scrollbar v0.6.11 */
+.ps-container {
+  -ms-touch-action: none;
+  touch-action: none;
+  overflow: hidden !important;
+  -ms-overflow-style: none; }
+  @supports (-ms-overflow-style: none) {
+    .ps-container {
+      overflow: auto !important; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .ps-container {
+      overflow: auto !important; } }
+  .ps-container.ps-active-x > .ps-scrollbar-x-rail,
+  .ps-container.ps-active-y > .ps-scrollbar-y-rail {
+    display: block;
+    background-color: transparent; }
+  .ps-container.ps-in-scrolling {
+    pointer-events: none; }
+    .ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+      background-color: #eee;
+      opacity: 0.9; }
+      .ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+        background-color: #999; }
+    .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+      background-color: #eee;
+      opacity: 0.9; }
+      .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+        background-color: #999; }
+  .ps-container > .ps-scrollbar-x-rail {
+    display: none;
+    position: absolute;
+    /* please don't change 'position' */
+    border-radius: 4px;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    bottom: 3px;
+    /* there must be 'bottom' for ps-scrollbar-x-rail */
+    height: 8px; }
+    .ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+      position: absolute;
+      /* please don't change 'position' */
+      background-color: #aaa;
+      border-radius: 4px;
+      transition: background-color .2s linear;
+      bottom: 0;
+      /* there must be 'bottom' for ps-scrollbar-x */
+      height: 8px; }
+  .ps-container > .ps-scrollbar-y-rail {
+    display: none;
+    position: absolute;
+    /* please don't change 'position' */
+    border-radius: 4px;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    right: 3px;
+    /* there must be 'right' for ps-scrollbar-y-rail */
+    width: 8px; }
+    .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+      position: absolute;
+      /* please don't change 'position' */
+      background-color: #aaa;
+      border-radius: 4px;
+      transition: background-color .2s linear;
+      right: 0;
+      /* there must be 'right' for ps-scrollbar-y */
+      width: 8px; }
+  .ps-container:hover.ps-in-scrolling {
+    pointer-events: none; }
+    .ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+      background-color: #eee;
+      opacity: 0.9; }
+      .ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+        background-color: #999; }
+    .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+      background-color: #eee;
+      opacity: 0.9; }
+      .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+        background-color: #999; }
+  .ps-container:hover > .ps-scrollbar-x-rail,
+  .ps-container:hover > .ps-scrollbar-y-rail {
+    opacity: 0.6; }
+  .ps-container:hover > .ps-scrollbar-x-rail:hover {
+    background-color: #eee;
+    opacity: 0.9; }
+    .ps-container:hover > .ps-scrollbar-x-rail:hover > .ps-scrollbar-x {
+      background-color: #999; }
+  .ps-container:hover > .ps-scrollbar-y-rail:hover {
+    background-color: #eee;
+    opacity: 0.9; }
+    .ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
+      background-color: #999; }
