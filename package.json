@@ -11,6 +11,7 @@
     "reactify": "^1.1.1"
   },
   "dependencies": {
+    "jsos-env": "^0.1.2"
   },
   "repository": {
     "type": "git",
