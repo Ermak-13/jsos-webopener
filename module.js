@@ -5,7 +5,7 @@ var Widget = require('./widget'),
     locales = require('./locales');
 
 global.I18n.registryDict(locales);
-global.OS.installModule('Webopener2', {
+global.OS.installModule('Webopener', {
   Widget: Widget,
   Shortcut: Shortcut
 });
