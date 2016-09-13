@@ -1,18 +1,8 @@
-# JSOS Module
+# JSOS Webopener
 
-**This repository was creating for helping develop new "JSOS module".**
-
-JSOS module is brick of [JSOS](https://github.com/Ermak-13/jsos).
-And it like as application of normal operation system.
-
-## How is developing new module?
-* Fork this repository
-* Rename repository
-* Edit README.md
-* `npm install`
-* `gulp` and `gulp server`
-* Implementing ... (directory "/module")
-* Please, add project link to [JSOS Store](https://github.com/Ermak-13/jsos-store) modules.txt
+JSOS Webopener is module of [JSOS](https://github.com/Ermak-13/jsos) project.
+It gives opportunity to save links of different sites. For example, you can
+save your favourite (or popular) sites.
 
 ## Gulp Commands
 * `gulp default` - gulp dev
